@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SURADATA - Program Peramalan Deret Waktu</title>
+    <meta name="description" content="Peramalan Deret Waktu dengan Model Box-Jenkins dan Deep Learning">
+
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.0/plotly.min.js"></script>
+
+    <!-- Styles - URUTAN PENTING -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo">
+                    <div class="logo-icon" style="
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50%;
+                        border: 3px solid #1976d2;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #fff;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                        margin-right: 12px;">
+                        <img src="https://raw.githubusercontent.com/ghiffahry/model_automasi_deretwaktu/main/assets/Suradata%20Logo%20-%20Font%20Simpel%204.jpg"
+                            alt="SURADATA Logo"
+                            style="width: 38px; height: 38px; object-fit: contain; border-radius: 50%;">
+                    </div>
+                    <span>SURADATA</span>
+                </div>
+                <div class="header-info">
+                    <div class="status-badge">
+                        <div class="status-dot"></div>
+                        <span id="statusText">System Ready</span>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <button class="nav-btn active" data-page="home">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-text">Beranda</span>
+                </button>
+                <button class="nav-btn" data-page="upload">
+                    <span class="nav-icon">☁️</span>
+                    <span class="nav-text">Unggah Data</span>
+                </button>
+                <button class="nav-btn" data-page="explore">
+                    <span class="nav-icon">🔍</span>
+                    <span class="nav-text">Jelajahi</span>
+                </button>
+                <button class="nav-btn" data-page="modeling">
+                    <span class="nav-icon">🤖</span>
+                    <span class="nav-text">Pemodelan</span>
+                </button>
+                <button class="nav-btn" data-page="about">
+                    <span class="nav-icon">ℹ️</span>
+                    <span class="nav-text">Tentang</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container" id="mainContainer">
+        <!-- Pages will be loaded dynamically -->
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loader-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p class="loading-text">Sedang Memproses...</p>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Scripts - URUTAN SANGAT PENTING -->
+    <script src="config.js"></script>
+    <script src="utils.js"></script>
+    <script src="state-manager.js"></script>
+    <script src="api.js"></script>
+    <script src="charts.js"></script>
+    <script src="navigation.js"></script>
+    <script src="home.js"></script>
+    <script src="upload.js"></script>
+    <script src="explore.js"></script>
+    <script src="modeling.js"></script>
+    <script src="about.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
