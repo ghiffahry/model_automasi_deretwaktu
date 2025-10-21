@@ -59,5 +59,3 @@
 * Interval kepercayaan dihitung berdasarkan error residual dan propagasi ketidakpastian model.
 
 ---
-
-Terima kasih telah menggunakan SURADATA. Untuk panduan lengkap dan contoh penggunaan, lihat folder `notebooks/` dan dokumentasi API yang tersedia di `/docs`.
